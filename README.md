@@ -31,7 +31,7 @@ Clone the repository, install all dependencies and call `make`.
 Optionally for the image conversion:
 
 - Inkscape
-- Graphvis/Dot
+- Graphviz
 - Python 
 - R and tikzDevice
 
