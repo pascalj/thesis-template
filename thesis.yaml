@@ -1,0 +1,11 @@
+---
+biblio-style: numeric
+bibliography: bibliography.bib
+chapters: true
+cref: true
+documentclass: scrbook
+title: An Over-engineered Thesis Template
+toc: true
+header-includes:
+  - \usepackage{import}
+...
