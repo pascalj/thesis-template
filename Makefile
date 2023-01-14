@@ -33,7 +33,7 @@ tmp/python:
 
 .PHONY: clean distclean upload open
 clean:
-	latexmk -C -quiet
+	latexmk -C -quiet thesis.tex
 	rm -rf thesis.tex
 
 distclean: clean

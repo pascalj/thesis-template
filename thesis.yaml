@@ -4,7 +4,10 @@ bibliography: bibliography.bib
 chapters: true
 cref: true
 documentclass: scrbook
-title: An Over-engineered Thesis Template
+title: Thesis Template
+subtitle: Over-Engineering as a Craft
+author:
+  - John Doe
 toc: true
 header-includes:
   - \usepackage{import}
