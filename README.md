@@ -1,15 +1,16 @@
 # An Over-Engineered Thesis Template
 
-The first step in writing any thesis is to procrastinate an create a thesis setup. This repository is a starting point
-with a few neat (and some might rightfully say unnecessary) features:
+The first step in actually *writing* a thesis is to procrastinate an create a thesis setup. 
+
+![A screenshot from the output](https://pascal.jungblut.me/images/thesis.png)
+
+This repository is a starting point with a few neat (and some might rightfully say unnecessary) features:
 
 ## Features
 
 - Easy building with Nix or alternatively with a plain Makefile
 - Markdown input with Pandoc: references, LaTeX passthrough, ...
 - Dynamic image conversion: edit images and have the result in your document, immediately
-
-![A screenshot from the output](https://pascal.jungblut.me/images/thesis.png)
 
 ## Installing and Usage
 
