@@ -9,6 +9,7 @@ with a few neat (and some might rightfully say unnecessary) features:
 - Markdown input with Pandoc: references, LaTeX passthrough, ...
 - Dynamic image conversion: edit images and have the result in your document, immediately
 
+![A screenshot from the output](https://pascal.jungblut.me/images/thesis.png)
 
 ## Installing and Usage
 

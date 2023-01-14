@@ -205,29 +205,6 @@ It uses:
   \href{https://www.python.org/}{Python}
 \end{itemize}
 
-It can embed PNG images (see \cref{fig:png}), SVG images via Inkscape (see \cref{fig:svg}) or DOT graphs (see \cref{fig:dot}).
-You can also cite references like~\autocite{moore_cramming_1965}.
-
-Just include them like seen in \cref{lst:import}.
-
-\begin{codelisting}
-
-\caption{Import example}
-
-\hypertarget{lst:import}{%
-\label{lst:import}}%
-\begin{Shaded}
-\begin{Highlighting}[]
-\KeywordTok{\textbackslash{}begin}\NormalTok{\{}\ExtensionTok{figure}\NormalTok{\}[h]}
-  \BuiltInTok{\textbackslash{}includegraphics}\NormalTok{\{}\ExtensionTok{tmp/format/name}\NormalTok{\}}
-  \FunctionTok{\textbackslash{}caption}\NormalTok{\{My label\}}
-  \KeywordTok{\textbackslash{}label}\NormalTok{\{}\ExtensionTok{fig:lab}\NormalTok{\}}
-\KeywordTok{\textbackslash{}end}\NormalTok{\{}\ExtensionTok{figure}\NormalTok{\}}
-\end{Highlighting}
-\end{Shaded}
-
-\end{codelisting}
-
 \begin{figure}
 \hypertarget{fig:png}{%
 \centering
@@ -235,6 +212,33 @@ Just include them like seen in \cref{lst:import}.
 \caption{A graph from a PNG file}\label{fig:png}
 }
 \end{figure}
+
+It can embed PNG images (see \cref{fig:png}), SVG images via Inkscape (see \cref{fig:svg}) or DOT graphs (see \cref{fig:dot}).
+You can also cite references like~\autocite{moore_cramming_1965}, use inline math like \(\frac{1}{n}\) or display math:
+
+\begin{align}
+  0 + 1 + 2 + 3 + 4 + \dotsb + n = 
+  \sum_{k=0}^n k = \frac{n(n+1)}{2} = \frac{n^2+n}{2}
+\end{align}
+
+Just include it like seen in \cref{lst:display}.
+
+\begin{codelisting}
+
+\caption{Display math example}
+
+\hypertarget{lst:display}{%
+\label{lst:display}}%
+\begin{Shaded}
+\begin{Highlighting}[]
+\KeywordTok{\textbackslash{}begin}\NormalTok{\{}\ExtensionTok{align}\NormalTok{\}}
+\SpecialStringTok{  0 + 1 + 2 + 3 + 4 + }\SpecialCharTok{\textbackslash{}dotsb}\SpecialStringTok{ + n =}
+\SpecialStringTok{  }\SpecialCharTok{\textbackslash{}sum}\SpecialStringTok{\_\{k=0\}\^{}n k = }\SpecialCharTok{\textbackslash{}frac}\SpecialStringTok{\{n(n+1)\}\{2\} = }\SpecialCharTok{\textbackslash{}frac}\SpecialStringTok{\{n\^{}2+n\}\{2\}}
+\KeywordTok{\textbackslash{}end}\NormalTok{\{}\ExtensionTok{align}\NormalTok{\}}
+\end{Highlighting}
+\end{Shaded}
+
+\end{codelisting}
 
 \begin{figure}[h]
   \centering
