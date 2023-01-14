@@ -1,0 +1,10 @@
+cite-method: biblatex
+filters:
+  - pandoc-crossref
+  - pandoc-fignos
+from: markdown+citations
+metadata-file: thesis.yaml
+template: template.tex
+to: latex
+verbosity: ERROR
+wrap: none

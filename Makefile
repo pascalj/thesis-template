@@ -7,15 +7,7 @@ thesis.pdf: thesis.tex
 
 thesis.tex: src/*.md template.tex thesis.yaml img/**/*.* $(svgs) $(python) $(dots) bibliography.bib
 	pandoc \
-		--filter pandoc-crossref \
-		--filter pandoc-fignos \
-		--template=template.tex \
-		--wrap=none \
-		--from markdown+citations \
-		--to latex \
-		--quiet \
-		--biblatex \
-		--metadata-file thesis.yaml \
+		-d defaults.yaml \
 		src/chapter_*.md \
 		| \
 	sed -r \
