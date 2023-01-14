@@ -15,40 +15,35 @@
         scheme-basic
         latex-bin
         latexmk
-        koma-script
-        pgf
-        inter
-        xkeyval
-        fontaxes
-        xpatch
-        etoolbox
-        transparent
-        acronym
-        bigfoot
-        xstring
-        float
-        mathtools
-        algorithm2e
-        ifoddpage
-        relsize
-        todonotes
-        listings
-        import
-        tcolorbox
-        siunitx
-        caption
-        enumitem
-        fancyhdr
-        environ
-        multirow
-        booktabs
+
+        # Add tex packages below
+        biber
         biblatex
-        courier
-        fancyvrb
-        subfig
-        footnotehyper
+        booktabs
+        caption
         cleveref
-        biber;
+        courier
+        enumitem
+        environ
+        etoolbox
+        fancyvrb
+        float
+        fontaxes
+        footnotehyper
+        ifoddpage
+        import
+        inter
+        koma-script
+        listings
+        mathtools
+        multirow
+        pgf
+        relsize
+        subfig
+        transparent
+        xkeyval
+        xpatch
+        xstring;
       };
     in rec {
       packages = {
@@ -56,17 +51,18 @@
           name = "thesis";
           src = self;
           buildInputs = [
-            pkgs.coreutils
+            # Add packages below
             pkgs.bash
-            tex
+            pkgs.coreutils
             pkgs.gnumake
-            pkgs.inkscape
-            pkgs.graphviz-nox
-            pkgs.pandoc
             pkgs.gnused
-            pkgs.python3
+            pkgs.graphviz-nox
             pkgs.haskellPackages.pandoc-crossref
+            pkgs.inkscape
+            pkgs.pandoc
             pkgs.pandoc-fignos
+            pkgs.python3
+            tex
           ];
           phases = ["unpackPhase" "buildPhase" "installPhase"];
           buildPhase = ''
@@ -86,6 +82,5 @@
         };
       };
       defaultPackage = packages.document;
-
     });
 }
