@@ -11,6 +11,7 @@ This repository is a starting point with a few neat (and some might rightfully s
 - Easy building with Nix or alternatively with a plain Makefile
 - Markdown input with Pandoc: references, LaTeX passthrough, ...
 - Dynamic image conversion: edit images and have the result in your document, immediately
+- Generate plots from data
 
 ## Installing and Usage
 
@@ -34,8 +35,12 @@ Optionally for the image conversion:
 
 - Inkscape
 - Graphviz
-- Python 
-- R and tikzDevice
+- Python
+  - numpy
+  - matplotlib
+- R
+  - tidyverse
+  - tikzDevice
 
 ## About
 
@@ -43,9 +48,9 @@ It uses Pandoc **Markdown** files as **input** and produces a **PDF** file via L
 use LaTeX inline, should you ever have to.
 
 Images are creates from "source" where possible. For example, graphs described in the dot language are compiled to PDF
-and included to make changes easy. SVGs are converted with Inkscape and you can even generate images with Python using
-tikzDevice.
+and included to make changes easy. SVGs are converted with Inkscape and you can even generate images with Python and R,
+e.g. with data from CSV files.
 
 ## Contributing
 
-If find anything not working or missing, just send me a PR!
+If you find anything not working or missing, just send me a PR!
