@@ -23,6 +23,7 @@
         caption
         cleveref
         courier
+        ec
         enumitem
         environ
         etoolbox
@@ -30,6 +31,7 @@
         float
         fontaxes
         footnotehyper
+        graphics
         ifoddpage
         import
         inter
@@ -37,7 +39,9 @@
         listings
         mathtools
         multirow
+        ms
         pgf
+        preview
         relsize
         subfig
         transparent
@@ -62,6 +66,12 @@
             pkgs.pandoc
             pkgs.pandoc-fignos
             pkgs.python3
+            pkgs.python310Packages.numpy
+            pkgs.python310Packages.matplotlib
+            pkgs.R
+            pkgs.rPackages.ggplot2
+            pkgs.rPackages.tidyverse
+            pkgs.rPackages.tikzDevice
             tex
           ];
           phases = ["unpackPhase" "buildPhase" "installPhase"];

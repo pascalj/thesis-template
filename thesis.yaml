@@ -11,4 +11,5 @@ author:
 toc: true
 header-includes:
   - \usepackage{import}
+  - \usepackage{tikz}
 ...
