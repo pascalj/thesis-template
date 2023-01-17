@@ -25,11 +25,11 @@
      inkscape:document-units="mm"
      showgrid="false"
      inkscape:zoom="2.1003835"
-     inkscape:cx="110.45602"
+     inkscape:cx="104.50472"
      inkscape:cy="140.45054"
-     inkscape:window-width="1920"
-     inkscape:window-height="1173"
-     inkscape:window-x="0"
+     inkscape:window-width="956"
+     inkscape:window-height="1169"
+     inkscape:window-x="960"
      inkscape:window-y="27"
      inkscape:window-maximized="1"
      inkscape:current-layer="layer1" />
@@ -76,7 +76,7 @@
          id="tspan1775"
          style="stroke-width:0.264583"
          x="32.767307"
-         y="30.187654">S</tspan></text>
+         y="30.187654">$S_1$</tspan></text>
     <circle
        style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:0.157;stroke-dasharray:none;stroke-opacity:1"
        id="circle1904"
@@ -93,7 +93,7 @@
          id="tspan1906"
          style="stroke-width:0.264583"
          x="57.709457"
-         y="40.882553">V</tspan></text>
+         y="40.882553">$V_2$</tspan></text>
     <circle
        style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:0.157;stroke-dasharray:none;stroke-opacity:1"
        id="circle1910"
@@ -110,7 +110,7 @@
          id="tspan1912"
          style="stroke-width:0.264583"
          x="32.767307"
-         y="56.510887">G</tspan></text>
+         y="56.510887">$G_3$</tspan></text>
     <path
        style="fill:none;stroke:#000000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-end:url(#TriangleStart)"
        d="M 34.220576,35.852838 V 48.067224"

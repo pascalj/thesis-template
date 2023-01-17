@@ -1,6 +1,6 @@
 svgs := $(patsubst img/svg/%.svg,tmp/svg/%.pdf,$(wildcard img/svg/*.svg))
 python := $(patsubst img/python/%.py,tmp/python/%.pdf,$(wildcard img/python/*.py))
-dots := $(patsubst img/dot/%.dot,tmp/dot/%.pdf,$(wildcard img/dot/*.dot))
+dots := $(patsubst img/dot/%.dot,tmp/dot/%.tex,$(wildcard img/dot/*.dot))
 Rs := $(patsubst img/R/%.R,tmp/R/%.tex,$(wildcard img/R/*.R))
 
 thesis.pdf: thesis.tex
@@ -19,8 +19,8 @@ thesis.tex: src/*.md template.tex thesis.yaml img/**/*.* $(svgs) $(python) $(dot
 tmp/svg/%.pdf: img/svg/%.svg
 	inkscape -C --export-latex -o $@ $<
 
-tmp/dot/%.pdf: img/dot/%.dot | tmp/dot
-	dot -Tpdf $< > $@
+tmp/dot/%.tex: img/dot/%.dot | tmp/dot
+	dot2tex --figonly $< > $@
 
 tmp/python/%.pdf: img/python/%.py | tmp/python
 	python3 $< > $@

@@ -1,10 +1,12 @@
 # An Over-Engineered Thesis Template
 
-The first step in actually *writing* a thesis is to procrastinate an create a thesis setup. 
+The first step in actually *writing* a thesis is to procrastinate and create a thesis document setup.
 
 ![A screenshot from the output](https://pascal.jungblut.me/images/thesis.png)
 
-This repository is a starting point with a few neat (and some might rightfully say unnecessary) features. You might also want to check out [the post](https://pascal.jungblut.me/posts/overengineering-thesis-template/) about this repository with slightly more information.
+This repository is a starting point with a few neat (and some might rightfully say unnecessary) features. You might also
+want to check out [the post](https://pascal.jungblut.me/posts/overengineering-thesis-template/) about this repository
+with slightly more information.
 
 ## Features
 
@@ -47,9 +49,8 @@ Optionally for the image conversion:
 It uses Pandoc **Markdown** files as **input** and produces a **PDF** file via LaTeX as the **output**. Pandoc Markdown lets you
 use LaTeX inline, should you ever have to.
 
-Images are creates from "source" where possible. For example, graphs described in the dot language are compiled to PDF
-and included to make changes easy. SVGs are converted with Inkscape and you can even generate images with Python and R,
-e.g. with data from CSV files.
+Images are creates from "source" where possible. For example, graphs described in the dot language are compiled to Tex,
+SVGs are converted with Inkscape and you can even generate images with Python and R, e.g. with data from CSV files.
 
 ## Contributing
 

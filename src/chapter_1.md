@@ -38,7 +38,7 @@ Just include it like seen in [@lst:display].
 
 \begin{figure}[h]
   \centering
-  \includegraphics{tmp/dot/graph}
+  \import{tmp/dot}{graph.tex}
   \caption{A graph from a dot file}
   \label{fig:dot}
 \end{figure}

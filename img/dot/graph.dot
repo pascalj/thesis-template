@@ -1,4 +1,9 @@
 digraph {
+        // texlbl label are only needed for math mode.
+        // See dot2tex documentation!
+        D [texlbl="$D_1$"]
+        O [texlbl="$O_2$"]
+        T [texlbl="$T_3$"]
         D -> T
         D -> O
         O -> T

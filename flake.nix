@@ -61,6 +61,7 @@
             pkgs.gnumake
             pkgs.gnused
             pkgs.graphviz-nox
+            pkgs.dot2tex
             pkgs.haskellPackages.pandoc-crossref
             pkgs.inkscape
             pkgs.pandoc
