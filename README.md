@@ -2,10 +2,10 @@
 
 The first step in actually *writing* a thesis is to procrastinate and create a thesis document setup.
 
-![A screenshot from the output](https://pascal.jungblut.me/images/thesis.png)
+![A screenshot from the output](https://jngb.lt/images/thesis.png)
 
 This repository is a starting point with a few neat (and some might rightfully say unnecessary) features. You might also
-want to check out [the post](https://pascal.jungblut.me/posts/overengineering-thesis-template/) about this repository
+want to check out [the post](https://jngb.lt/posts/overengineering-thesis-template/) about this repository
 with slightly more information.
 
 ## Features
